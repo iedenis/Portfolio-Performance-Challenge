@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-performance-challenge/static/css/main.af37d185.chunk.css",
+    "main.js": "/portfolio-performance-challenge/static/js/main.45bf6dc0.chunk.js",
+    "main.js.map": "/portfolio-performance-challenge/static/js/main.45bf6dc0.chunk.js.map",
+    "runtime-main.js": "/portfolio-performance-challenge/static/js/runtime-main.daf27862.js",
+    "runtime-main.js.map": "/portfolio-performance-challenge/static/js/runtime-main.daf27862.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/portfolio-performance-challenge/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.33b7099b.chunk.js": "/portfolio-performance-challenge/static/js/2.33b7099b.chunk.js",
+    "static/js/2.33b7099b.chunk.js.map": "/portfolio-performance-challenge/static/js/2.33b7099b.chunk.js.map",
+    "index.html": "/portfolio-performance-challenge/index.html",
+    "precache-manifest.348787441e7dc81767cbc1d288aad502.js": "/portfolio-performance-challenge/precache-manifest.348787441e7dc81767cbc1d288aad502.js",
+    "service-worker.js": "/portfolio-performance-challenge/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/portfolio-performance-challenge/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.af37d185.chunk.css.map": "/portfolio-performance-challenge/static/css/main.af37d185.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.daf27862.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.33b7099b.chunk.js",
+    "static/css/main.af37d185.chunk.css",
+    "static/js/main.45bf6dc0.chunk.js"
+  ]
+}
