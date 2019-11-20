@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { UserInput } from './components/UserInput';
-import { Container, Alert } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { useState, useEffect } from 'react'
 import { ResultTable } from './components/ResultTable';
 import { TryThis } from './components/TryThis';
@@ -9,7 +9,6 @@ import Chart from './components/Chart'
 function App() {
 
   const [error, setError] = useState({ value: false, message: '' })
-  const [stockChange, setStockChange] = useState({})
   const [stocksValues, setStocksValues] = useState([])
 
   const setDay = () => {
@@ -21,7 +20,7 @@ function App() {
 
   useEffect(() => {
     console.log(stocksValues)
-  }, [stockChange, stocksValues])
+  }, [stocksValues])
 
   const handleUserInput = async (data, callback) => {
     //setUserData({data})
@@ -30,7 +29,7 @@ function App() {
     const amount = data.amount;
     stocks.map((stock, idx) => {
       let oldAmount = amount * (stock.stockPercentage / 100);
-      fetchedData.push(fetchDataPromise(stock.value, data.date, stock.stockPercentage, oldAmount))
+      return fetchedData.push(fetchDataPromise(stock.value, data.date, stock.stockPercentage, oldAmount))
     })
     await Promise.all(fetchedData).then(res => setStocksValues(res)).catch(err => {
       setError({ value: true, message: err })
@@ -55,7 +54,7 @@ function App() {
         setError({ value: true, message: err })
         reject('ERROR', err)
       }
-      console.log(yesterdayValue.Message)
+      // console.log(yesterdayValue.Message)
       if (dayValue.Message || yesterdayValue.Message) {
         setError({
           value: true,

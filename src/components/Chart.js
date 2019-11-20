@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Bar, Line, Pie } from 'react-chartjs-2'
-import {StyledContainer} from './styledComponents'
+import React from 'react'
+import { Bar } from 'react-chartjs-2'
+import { StyledContainer } from './styledComponents'
 const Chart = ({ stocksValues }) => {
 
     let profit = stocksValues.map(item => { return item.newAmount - item.oldAmount })
@@ -21,16 +21,12 @@ const Chart = ({ stocksValues }) => {
                 label: 'Change in value',
                 data: profit,
                 backgroundColor: stocksValues.map(stock => colors[Math.floor(Math.random() * colors.length)])
-
             }
         ]
-
     }
 
     return (
-
         <StyledContainer>
-
             <Bar
                 data={data}
 
@@ -48,7 +44,6 @@ const Chart = ({ stocksValues }) => {
                 }}
             ></Bar>
         </StyledContainer>
-
     )
 }
 
